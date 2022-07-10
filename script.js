@@ -16,17 +16,17 @@ for (let i = 0; i < 2; i++) {
     } else { 
         i--;
     }
-};
+}
 
 if (personalMovieDB.count < 10) {
     console.log('litle');
 } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
     console.log(' norm');
 } else if (personalMovieDB.count > 30) {
-    console.log(`too much`)
+    console.log(`too much`);
 } else {
-    console.log(' errrrroooorrr')
+    console.log(' errrrroooorrr');
 }
         
 
-console.log(personalMovieDB)
+console.log(personalMovieDB);
