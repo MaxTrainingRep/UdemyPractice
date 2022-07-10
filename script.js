@@ -8,13 +8,14 @@ const personalMovieDB = {
     privat: false
 };
 for (let i = 0; i < 2; i++) {
-    const a = prompt('Один из последних просмотренных Вами фильмов', 'Название фильма');
-   
-    for (let j = 0; j < 1; j++){
-        const b = +prompt('Оцените этот фильм')
+    const a = prompt('Один из последних просмотренных Вами фильмов', 'Название фильма'),
+          b = +prompt('Оцените этот фильм');
+    if (a != null && b != null && a !='' && b !='' && a.length < 50) {
         personalMovieDB.movies[a] = b;
-    };
-}
+    } else { 
+        i--;
+    }
+};
         
 
 console.log(personalMovieDB)
